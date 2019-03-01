@@ -52,10 +52,10 @@ void timer_periodic_cb(void *arg) //200ms中断一次
 
   if(human_status==HAVEHUMAN)//有人时，1s内右2个1则转为有人
   {
-    if (timer_count >= 5) //1s
+    if (timer_count >= 10) //2s
     {
       timer_count = 0;
-      if(havehuman_count>=2)
+      if(havehuman_count>=4)
       {
         human_status=HAVEHUMAN;
         printf("human_status1=%d\n",human_status);

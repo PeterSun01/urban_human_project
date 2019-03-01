@@ -5,7 +5,7 @@
 extern void Human_Init(void);
 extern void Humanapp(void);
 
-#define GPIO_HUMAN      14
+#define GPIO_HUMAN      4
 
 int havehuman_count;
 int nohuman_count;
